@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        </style>
+    <style>
+        :root{
+            --txtfont : "Bebas Neue", serif;
+        }
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(BGimage.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+             }
+
+        section {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+        }
+        main{
+            width: 500px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #c2c2c218;
+            box-shadow: 0px 1px 5px 0px #1e1e1e;
+        }
+        main>div:first-child{
+            font-size: 40px;
+            font-family: var(--txtfont);
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li {
+            margin-block: 20px;
+        }
+        ul li input{
+            border: none;
+            background: rgba(255, 255, 255, 0.151);
+            color: whitesmoke;
+            width: 400px;
+            height: 50px;
+            padding-inline: 10px;
+            font-size: 20px;
+            font-family: var(--txtfont);
+            letter-spacing: 2px;
+            /* font-weight: bold; */
+
+        }
+        ul>li:last-child{
+            margin-top: 100px;
+        }
+        ul li input[type="button"]{
+            box-shadow: inset 0px 1px 7px rgb(255 78 78 / 43%);
+            background: transparent;
+
+        }
+        input::placeholder{
+            color: white;
+            font-size: 20px;
+            font-family: var(--txtfont);
+            letter-spacing: 2px;
+        }
+        input:focus-visible{
+            outline: none;
+        }
+        input:valid{
+            background-color: transparent;
+        }
+        input:invalid{
+            background-color: #e71f1f33;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <main>
+            <div>Register Youur Account</div>
+            <div>
+                <form>
+                    <ul>
+                        <li><input type="text" placeholder="Name" required ></li>
+                        <li><input type="email" placeholder="Email" required></li>
+                        <li><input type="password" placeholder="Password" required></li>
+                        <li><input type="button" value="SUBMIT"></li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>
